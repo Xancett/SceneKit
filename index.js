@@ -50,7 +50,7 @@ function setBodyEnabled(enabled) {
 jQuery(async () => {
     loadSettings();
 
-    const html = await renderExtensionTemplateAsync(extensionName, 'settings');
+    const html = await renderExtensionTemplateAsync(`third-party/${extensionName}`, 'settings');
     $('#extensions_settings').append(html);
 
     applySettingsToUI();
